@@ -15,13 +15,6 @@ export default function Hero() {
   const [showParagraph, setShowParagraph] = useState(false);
   const { setTypingDone } = useTypingContext();
 
-  // ✅ Redirect to homepage if user refreshes a non-root route
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.location.pathname !== "#") {
-      window.location.href = "#";
-    }
-  }, []);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
