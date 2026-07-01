@@ -3,13 +3,20 @@
 import { motion } from "framer-motion";
 import ProjectCard from "../common/ProjectCard";
 
+type Project = {
+  title: string;
+  description: string;
+  technologies: string[];
+  link: string;
+};
+
 export default function Projects() {
-  const projects = [
+  const projects: Project[] = [
     {
       title: "Portfolio Website v2",
       description:
         "A sleek, responsive portfolio built with Next.js, TypeScript, and Tailwind CSS. The site showcases professional experience and projects with smooth Framer Motion animations, clean design, and optimized performance. Deployed with Vercel for fast, reliable hosting.",
-      Technologies: [
+      technologies: [
         "Next.js, ",
         "TypeScript, ",
         "Tailwind CSS, ",
@@ -22,14 +29,14 @@ export default function Projects() {
       title: "Portfolio Website v1",
       description:
         "First portfolio website — built while learning the fundamentals of HTML5, CSS3, and JavaScript — this site features a sleek, responsive design with smooth CSS transitions, clean layouts, and performance optimizations to showcase early projects. Deployed on GitHub Pages for fast, reliable hosting.",
-      Technologies: ["HTML5, ", "CSS3, ", "Javascript, ", "Github Pages"],
+      technologies: ["HTML5, ", "CSS3, ", "JavaScript, ", "GitHub Pages"],
       link: "https://github.com/d-swank/my-portfolio-v1",
     },
     {
       title: "FitHub",
       description:
         "A fitness application that allows users to browse exercises, create customized workout plans, track their progress, and communicate with other users. The application utilizes a client-server architecture, with a User Module that provides a user-friendly interface for accessing the FitHub server's data tables.",
-      Technologies: [
+      technologies: [
         "Angular, ",
         "HTML, ",
         "CSS, ",
@@ -42,35 +49,35 @@ export default function Projects() {
       title: "Outbreak VR",
       description:
         "A virtual reality horror game set in space. The player takes on the role of a character navigating through a dangerous space environment, encountering various obstacles and enemies that can cause damage.",
-      Technologies: ["Unity, ", "C#"],
+      technologies: ["Unity, ", "C#"],
       link: "https://www.youtube.com/watch?v=I9y_7VJ5-Z8",
     },
     {
       title: "Musical Light Display",
       description:
         "An embedded system utilizing a Nucleo board that uses push buttons to select a Christmas song. When a song plays, three LEDs flash to the notes of the song, the song's name is displayed on an LCD screen, and a potentiometer is used for volume control.",
-      Technologies: ["C, ", "Embedded Systems, ", "Nucleo Board"],
+      technologies: ["C, ", "Embedded Systems, ", "Nucleo Board"],
       link: "https://github.com/d-swank/Musical-Light-Display-Mbed-Studio",
     },
     {
-      title: "Japenese Translator",
+      title: "Japanese Translator",
       description:
         "Developed a translator that utilizes a deterministic finite automaton (DFA) to adhere to a specific set of rules. Using provided files containing various sentences, the program checks for syntactic and semantic accuracy. If the sentences pass this check, the program accurately parses and translates the story from Japanese to English.",
-      Technologies: ["C++"],
+      technologies: ["C++"],
       link: "https://github.com/d-swank/Translator",
     },
     {
       title: "Lexical Analyzer GUI",
       description:
         "Created a GUI application using Tkinter that implements a lexical analyzer. It takes the input of source code, reads it line by line, obtains the lexical analysis result, and then parses it into a parse tree.",
-      Technologies: ["Python, ", "Tkinter"],
+      technologies: ["Python, ", "Tkinter"],
       link: "https://github.com/d-swank/Lexical-Analyzer-GUI",
     },
     {
       title: "Data Structures and Algorithms",
       description:
         "Assignments and projects from the CS 311 Data Structures & Algorithms class at CSUSM, focusing on implementing various data structures and algorithms.",
-      Technologies: ["C++"],
+      technologies: ["C++"],
       link: "https://github.com/d-swank/CPP-Data-Structures-and-Algorithms",
     },
   ];
@@ -105,7 +112,7 @@ export default function Projects() {
               key={index}
               title={project.title}
               description={project.description}
-              Technologies={project.Technologies || "N/A"}
+              Technologies={project.technologies}
               link={project.link}
               index={index}
             />

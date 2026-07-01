@@ -22,7 +22,7 @@ export default function ProjectCard({
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="group block border border-gray-300 dark:border-gray-600 rounded-lg p-6 shadow-lg bg-white/80 dark:bg-gray-800/70 text-gray-800 dark:text-gray-100 transform hover:scale-[1.03] hover:shadow-2xl hover:brightness-110 hover:border-indigo-600 dark:hover:border-indigo-500 hover:-translate-y-1 backdrop-blur-sm"
+      className="group flex h-full flex-col border border-gray-300 dark:border-gray-600 rounded-lg p-6 shadow-lg bg-white/80 dark:bg-gray-800/70 text-gray-800 dark:text-gray-100 transform hover:scale-[1.03] hover:shadow-2xl hover:brightness-110 hover:border-indigo-600 dark:hover:border-indigo-500 hover:-translate-y-1 backdrop-blur-sm"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, delay: index * 0.2 }}
@@ -34,7 +34,7 @@ export default function ProjectCard({
         <b>Technologies:</b> {Technologies}
       </p>
       <motion.span
-        className="text-indigo-600 dark:text-indigo-500 font-medium transform hover:text-indigo-700 dark:hover:text-indigo-600 hover:scale-105 inline-block relative hover:animate-pulse group"
+        className="mt-auto self-center text-indigo-600 dark:text-indigo-500 font-medium transform hover:text-indigo-700 dark:hover:text-indigo-600 hover:scale-105 inline-block relative hover:animate-pulse group"
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{

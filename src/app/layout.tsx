@@ -10,7 +10,10 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const siteUrl = "https://www.swanksoftware.com";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Dakota Swank | Software Engineer",
   description:
     "Dakota Swank — a creative and dedicated software engineer building modern, user-friendly web applications with Next.js, React, and Tailwind CSS.",
@@ -23,16 +26,24 @@ export const metadata: Metadata = {
     title: "Dakota Swank | Software Engineer",
     description:
       "Explore the portfolio of Dakota Swank, a software engineer specializing in Next.js and modern web technologies.",
-    url: "https://www.swanksoftware.com/favicon.png",
+    url: siteUrl,
+    siteName: "Dakota Swank Portfolio",
     type: "website",
     images: [
       {
-        url: "https://www.swanksoftware.com/favicon.png",
+        url: "/opengraph-image",
         width: 1200,
         height: 630,
         alt: "Dakota Swank's Portfolio",
       },
     ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Dakota Swank | Software Engineer",
+    description:
+      "Explore Dakota Swank's software engineering portfolio, projects, and experience.",
+    images: ["/opengraph-image"],
   },
 };
 
