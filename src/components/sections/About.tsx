@@ -55,10 +55,10 @@ export default function About() {
             <span className="text-indigo-600 dark:text-indigo-500 font-sans font-semibold">
               Dakota Swank
             </span>
-            , a creative and dedicated software engineer specializing in
-            bringing ideas to life. With a keen eye for detail and a relentless
-            drive for perfection, I take pride in crafting seamless user
-            experiences and robust backend solutions.
+            , a software QA engineer who likes working close to the details
+            that make an application feel reliable. I care about clear test
+            coverage, readable defects, and helping teams ship changes with
+            more confidence.
           </motion.p>
 
           <motion.p
@@ -67,11 +67,10 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.4 }}
           >
-            I’m passionate about web development and enjoy creating responsive,
-            user-friendly websites and web applications. I love turning ideas
-            into functional and beautiful digital experiences. My focus is on
-            clean design, solid functionality, and creating great user
-            experiences.
+            I also enjoy building web applications with Next.js, React, and
+            Tailwind CSS. This portfolio is part of that practice: a place to
+            sharpen my frontend skills while keeping performance,
+            accessibility, and usability in view.
           </motion.p>
 
           <motion.p
@@ -80,10 +79,10 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.6 }}
           >
-            My journey in technology began at a young age and has evolved into a
-            professional pursuit of innovative problem-solving and continuous
-            learning. I believe deeply in the power of technology to transform
-            lives, industries, and the world at large.
+            My path into technology has moved through software testing, web
+            development, and hands-on problem solving. I like learning by
+            building, breaking things carefully, and improving the process the
+            next time around.
           </motion.p>
 
           <motion.p
@@ -92,9 +91,9 @@ export default function About() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.8 }}
           >
-            Outside of coding, I enjoy exploring the outdoors, engaging with the
-            tech community, and pushing the boundaries of my creativity through
-            ongoing projects and collaborations.
+            Outside of work, I enjoy getting outdoors, following what the tech
+            community is building, and taking on projects that give me a reason
+            to learn something new.
           </motion.p>
         </motion.div>
       </div>

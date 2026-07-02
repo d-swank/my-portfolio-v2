@@ -1,4 +1,5 @@
 import { ImageResponse } from "next/og";
+import { DSLogo } from "@/components/common/DSLogo";
 
 export const runtime = "edge";
 export const alt = "Dakota Swank | Software Engineer";
@@ -49,7 +50,20 @@ export default function Image() {
             }}
           >
             <span>Dakota Swank</span>
-            <span>DS</span>
+            <div
+              style={{
+                width: 96,
+                height: 96,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                border: "2px solid #4f46e5",
+                borderRadius: 999,
+                color: "#4f46e5",
+              }}
+            >
+              <DSLogo size={72} />
+            </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             <div style={{ fontSize: 86, fontWeight: 800, lineHeight: 1 }}>

@@ -3,7 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Sun, Moon } from "lucide-react";
-import { useTypingContext } from "@/components/common/Typewriter";
+import { useTypingContext } from "@/components/common/TypingContext";
 
 export function ThemeToggle() {
   const { setTheme, resolvedTheme } = useTheme();

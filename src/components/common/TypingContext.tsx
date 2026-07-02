@@ -9,7 +9,7 @@ type TypingContextType = {
 
 const TypingContext = createContext<TypingContextType | undefined>(undefined);
 
-export const TypingProvider = ({ children }: { children: React.ReactNode }) => {
+export function TypingProvider({ children }: { children: React.ReactNode }) {
   const [typingDone, setTypingDone] = useState(false);
 
   return (
@@ -17,12 +17,12 @@ export const TypingProvider = ({ children }: { children: React.ReactNode }) => {
       {children}
     </TypingContext.Provider>
   );
-};
+}
 
-export const useTypingContext = () => {
+export function useTypingContext() {
   const context = useContext(TypingContext);
   if (!context) {
     throw new Error("useTypingContext must be used within TypingProvider");
   }
   return context;
-};
+}

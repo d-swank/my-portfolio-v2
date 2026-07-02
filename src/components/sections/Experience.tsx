@@ -16,11 +16,11 @@ export default function Experience() {
       company: "Boeing",
       period: "2023 – Present",
       description: [
-        "Executes diverse testing (functional, regression, web services, mobile performance/usability), tracking defects and maintaining detailed documentation of test results.",
-        "Serves as Scrum Master, facilitating all ceremonies, coaching the team on Agile/Scrum principles.",
-        "Develops and maintains multiple automated test scripts using TestComplete, integrating them into Jenkins CI.",
-        "Leads end-to-end QA strategies for major releases, overseeing test planning and documentation.",
-        "Collaborates with development teams to identify, report, and resolve software defects promptly.",
+        "Owns functional, regression, web service, mobile, performance, and usability testing across release work.",
+        "Builds and maintains TestComplete automation and integrates test coverage into Jenkins CI workflows.",
+        "Documents clear test results and defect reports so developers can reproduce, prioritize, and resolve issues quickly.",
+        "Leads QA planning for major releases, including test scope, execution strategy, and release readiness documentation.",
+        "Serves as Scrum Master, facilitating ceremonies and helping the team keep Agile practices focused and practical.",
       ],
     },
     {
@@ -28,11 +28,10 @@ export default function Experience() {
       company: "Hobby",
       period: "2018 – Present",
       description: [
-        "Develops responsive and dynamic web applications using Next.js and React.",
-        "Utilizes Tailwind CSS to create modern, maintainable, and scalable styling solutions.",
-        "Ensures cross-browser compatibility and responsive design across various devices.",
-        "Optimizes applications for performance and accessibility.",
-        "Implements reusable components and follows best practices for clean, efficient code.",
+        "Builds responsive web applications with Next.js, React, TypeScript, and Tailwind CSS.",
+        "Creates reusable UI components and keeps styling maintainable across desktop and mobile layouts.",
+        "Tests cross-browser behavior, accessibility, and responsive states while iterating on user-facing features.",
+        "Uses personal projects to practice clean code, performance tuning, and modern frontend patterns.",
       ],
     },
     {
@@ -40,10 +39,10 @@ export default function Experience() {
       company: "United States Navy",
       period: "2014 – 2018",
       description: [
-        "Held a secret security clearance while performing bridge associated tasks such as standing watch as Helmsman and Lee Helmsman.",
-        "Served as a master helmsman responsible for navigating a 1,092-foot aircraft carrier through critical missions over 12,000 miles and 4 successful Pacific deployments.",
-        "Led a watch team of five seamen as BMOW, ensuring safe operations and clear communication via ship-wide announcements.",
-        "Trained and supervised ship maintenance duties including rigging, painting, deck equipment, and RHIB operations.",
+        "Held a secret security clearance while standing bridge watch as Helmsman and Lee Helmsman.",
+        "Served as master helmsman, helping navigate a 1,092-foot aircraft carrier across more than 12,000 miles and four Pacific deployments.",
+        "Led a five-person watch team as BMOW, supporting safe operations and ship-wide communication.",
+        "Trained and supervised deck maintenance, rigging, painting, equipment handling, and RHIB operations.",
       ],
     },
   ];
